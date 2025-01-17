@@ -1,0 +1,26 @@
+{
+    "users": [
+      {
+        "id": 1,
+        "username": "admin",
+        "password": "admin123",
+        "role": "superAdmin"
+      },
+      {
+        "id": 2,
+        "username": "user1",
+        "password": "password1",
+        "role": "user"
+      }
+    ],
+    "todos": [
+      {
+        "id": "dee6749a-63e8-4c69-ae5d-8885daffc23c",
+        "userId": 2,
+        "txt": "Aller à la piscine",
+        "done": false,
+        "category": "Loisirs"
+      }
+    ]
+  }
+  
