@@ -1,26 +1,53 @@
 {
-    "users": [
-      {
-        "id": 1,
-        "username": "admin",
-        "password": "admin123",
-        "role": "superAdmin"
-      },
-      {
-        "id": 2,
-        "username": "user1",
-        "password": "password1",
-        "role": "user"
-      }
-    ],
-    "todos": [
-      {
-        "id": "dee6749a-63e8-4c69-ae5d-8885daffc23c",
-        "userId": 2,
-        "txt": "Aller à la piscine",
-        "done": false,
-        "category": "Loisirs"
-      }
-    ]
-  }
-  
+  "users": [
+    {
+      "id": "1",
+      "username": "admin",
+      "password": "admin123",
+      "role": "superAdmin"
+    },
+    {
+      "id": "2",
+      "username": "user1",
+      "password": "password1",
+      "role": "user"
+    }
+  ],
+  "todos": [
+    {
+      "id": "5cb757f7-d789-434c-824d-3a41f8f4226d",
+      "description": "id t1",
+      "userId": "1",
+      "done": false,
+      "editable": true
+    },
+    {
+      "id": "831a2b77-4c97-45c9-8d40-bbfe290a235c",
+      "description": "est",
+      "userId": "2",
+      "done": false,
+      "editable": true
+    },
+    {
+      "id": "f0865d65-cd56-43d6-b395-92043cf41b64",
+      "description": "est",
+      "userId": "2",
+      "done": false,
+      "editable": true
+    },
+    {
+      "id": "1d2180f2-f7e9-42ee-b2e9-bf2d7e7199df",
+      "description": "test",
+      "userId": "test",
+      "done": false,
+      "editable": true
+    },
+    {
+      "id": "0834a6e7-2259-4d57-b4f5-0bf85b23c56a",
+      "description": "test",
+      "userId": "2",
+      "done": false,
+      "editable": true
+    }
+  ]
+}

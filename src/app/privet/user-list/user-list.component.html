@@ -1,0 +1,33 @@
+<div class="center">
+  <h1>Liste des utilisateurs :</h1>
+  <button (click)="add()">Ajouter</button>
+  <table>
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Nom d'utilisateur</th>
+        <th>Rôle</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let user of users">
+        <td>{{ user.id }}</td>
+        <td>{{ user.username }}</td>
+        <td>{{ user.role }}</td>
+        <td>
+          <button (click)="supprimer(user)">Supprimer</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+  
+</div>
+
+<div style="display: none"  [ngClass]="{'show': isAdding}">
+  <input [(ngModel)]="newUser.username" placeholder="Nom d'utilisateur" (keyup.enter)="ajouter()" />
+  <input [(ngModel)]="newUser.password" placeholder="Mot de passe" (keyup.enter)="ajouter()" />
+  <input [(ngModel)]="newUser.role" placeholder="Rôle" (keyup.enter)="ajouter()" />
+  <button (click)="ajouter()">Ajouter</button>
+</div>
